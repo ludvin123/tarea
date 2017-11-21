@@ -17,6 +17,8 @@ $(document).ready(function(){
       'full_name': full_name,
       'gender' : gender,
       'interests' : interests
+      'old': old
+      'music': music
     };
 
     $.post('/find', payload);
