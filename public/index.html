@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+  </script>
+	<script type="text/javascript" src="main.js">
+
+	</script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form method="post">
+	<p>
+		<label for="first_name">Nombre</label>
+		<input type="text" name="first_name" id="first_name" required class="input-text">
+
+	</p>
+
+	<p>
+		<label for="full_name">Apellidos</label>
+		<input type="text" name="text-name" id="full_name" class="input-text">
+	</p>
+
+	<p>
+		<label for="">Sexo</label>
+		<input type="radio" name="gender" value="f" id="femenino"/>
+		<label for="femenino">femenino</label>
+		<input type="radio" name="gender" value="m" id="masculino"/>
+		<label for="masculino">masculino</label>
+	</p>
+
+	<p>
+		<label for="">Edad (rango)</label>
+		<input type="radio" name="old" value="min" id="menor"/>
+		<label for="menor">5-10</label>
+		<input type="radio" name="old" value="mid" id="mediano"/>
+		<label for="mediano">11-20</label>
+		<input type="radio" name="old" value="may" id="mayor"/>
+		<label for="mayor">21-30</label>
+	</p>
+
+	<p>
+		<label for="">Músicas</label>
+		<input type="checkbox" name="interest" value="rock" id="rock"/>
+		<label for="rock">Rock</label>
+		<input type="checkbox" name="interest" value="metal" id="metal"/>
+		<label for="metal">Metal</label>
+		<input type="checkbox" name="interest" value="trap" id="trap"/>
+		<label for="trap">Trap</label>
+	</p>
+
+	<textarea rows="4" cols="50">
+		escribe tu opinión
+	</textarea>
+
+
+
+	<input type="submit" value="Registrar" >
+</form>
+</body>
+</html>
