@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  alert('Hola')
   $('input[type="submit"]').on("click", function(event) {
     event.preventDefault();
     var first_name = $('#first_name').val(); // ${duvuelve el array de coincidencias}
