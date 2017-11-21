@@ -4,21 +4,21 @@ $(document).ready(function(){
     var first_name = $('#first_name').val(); // ${duvuelve el array de coincidencias}
     var full_name = $('#full_name').val();// {full_name}
     var gender = $('input[name="gender"]:checked').val();//{}
-    var interest = $('input[name="interest"]:checked');//{}
-    var interests = new Array();
+    var old = $('input[name="old"]:checked');//{}
+    var music = $('input[name="interest"]:checked');//{}
+    var musics = new Array();
 
     for (var i = 0; i < interest.length; i++) {
-       var temp_interest = interest[i];
-       interests.push(temp_interest.value);
+       var temp_musics = musics[i];
+       musics.push(temp_musics.value);
     }
 
     var payload = {
       'first_name': first_name,
       'full_name': full_name,
       'gender' : gender,
-      'interests' : interests
-      'old': old
-      'music': music
+      'old': old,
+      'music': musics,
     };
 
     $.post('/find', payload);
