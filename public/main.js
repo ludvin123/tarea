@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  alert('Hola')
+
   $('input[type="submit"]').on("click", function(event) {
     event.preventDefault();
     var first_name = $('#first_name').val(); // ${duvuelve el array de coincidencias}
@@ -9,7 +9,7 @@ $(document).ready(function(){
     var music = $('input[name="interest"]:checked');//{}
     var musics = new Array();
 
-    for (var i = 0; i < interest.length; i++) {
+    for (var i = 0; i < musics.length; i++) {
        var temp_musics = musics[i];
        musics.push(temp_musics.value);
     }
