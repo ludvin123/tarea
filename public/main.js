@@ -4,14 +4,15 @@ $(document).ready(function(){
     event.preventDefault();
     var first_name = $('#first_name').val(); // ${duvuelve el array de coincidencias}
     var full_name = $('#full_name').val();// {full_name}
-    var gender = $('input[name="gender"]:checked').val();//{}
-    var old = $('input[name="old"]:checked');//{}
-    var music = $('input[name="interest"]:checked');//{}
+    var old = $('input[name="old"]:checked').val();//{}
+    var gender = $('input[name="gender"]:checked').val();
+    var music = $('input[name="music"]:checked');//{}
+    var textarea = $('#textarea').val();
     var musics = new Array();
 
-    for (var i = 0; i < musics.length; i++) {
-       var temp_musics = musics[i];
-       musics.push(temp_musics.value);
+    for (var i = 0; i < music.length; i++) {
+       var temp_music = music[i];
+       musics.push(temp_music.value);
     }
 
     var payload = {
@@ -20,6 +21,7 @@ $(document).ready(function(){
       'gender' : gender,
       'old': old,
       'music': musics,
+      'textarea':textarea,
     };
 
     $.post('/find', payload);
