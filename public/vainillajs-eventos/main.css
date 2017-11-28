@@ -1,5 +1,11 @@
+body{
+  background-image:url("img/encuesta1.png");
+}
 .input-text{
   padding: 10px;
   border-radius: 5px;
+}
 
+#message span{
+  display: block;
 }
